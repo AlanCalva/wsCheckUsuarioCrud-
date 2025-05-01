@@ -41,7 +41,7 @@ namespace wsCheckUsuario
                 using (HttpClient client = new HttpClient())
                 {
                     // Ejecución de la petición de un endpoint a una webApi
-                    string apiUrl = "https://localhost:44337/check/usuario/vwrptusuario?filtro=" + TextBox1.Text;
+                    string apiUrl = "https://localhost:44304/check/usuario/vwrptusuario?filtro=" + TextBox1.Text;
                     HttpResponseMessage respuesta =
                                     await client.GetAsync(apiUrl);
                     // ---------------------------------------------------

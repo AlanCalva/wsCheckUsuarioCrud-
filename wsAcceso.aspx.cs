@@ -35,7 +35,7 @@ namespace wsCheckUsuario
                     // Configurar el envío del contenido
                     HttpContent contenido =
                             new StringContent(datos, Encoding.UTF8, "application/json");
-                    string urlApi = "https://localhost:44337/check/usuario/spvalidaracceso";
+                    string urlApi = "https://localhost:44304/check/usuario/spvalidaracceso";
                     // Ejecución del endpoint
                     HttpResponseMessage respuesta =
                             await client.PostAsync(urlApi, contenido);
