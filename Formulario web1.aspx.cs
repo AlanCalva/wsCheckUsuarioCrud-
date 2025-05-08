@@ -71,6 +71,13 @@ namespace wsCheckUsuario
             {
                 Response.Write("<script language='javascript'>alert('Error inesperado ...');</script>");
             }
+
         }
+        protected async void ImageButton1_Click(object sender, ImageClickEventArgs e)
+        {
+            await cargaDatosApi();
+        }
+
+
     }
 }

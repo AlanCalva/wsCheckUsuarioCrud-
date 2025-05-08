@@ -9,7 +9,8 @@
     <br />
     <asp:Label ID="Label1" runat="server" Text="Gestión de Usuarios" Font-Bold="True" Font-Names="Arial" Font-Size="Medium"></asp:Label>
     <br /><br />
-
+     <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>
+     <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/imagenes/icon_logalum.GIF" OnClick="ImageButton1_Click1" />
     <table width="70%" border="0">
         <tr>
             <td width="30%">
@@ -20,9 +21,6 @@
             <td width="70%">
 
                 <asp:TextBox ID="TextBox1" runat="server" MaxLength="3" Width="50px"></asp:TextBox>
-
-            &nbsp;&nbsp;
-                <asp:Button ID="Button4" runat="server" OnClick="Button4_Click" Text="Buscar" />
 
             </td>
         </tr>
@@ -95,7 +93,7 @@
             </td>
             <td width="70%">
 
-                <asp:TextBox ID="TextBox7" runat="server" MaxLength="40" Width="301px"></asp:TextBox>
+                <asp:TextBox ID="TextBox7" runat="server" MaxLength="40" Width="211px"></asp:TextBox>
 
             </td>
         </tr>
@@ -121,9 +119,9 @@
                 <br />
                 <asp:Button ID="Button1" runat="server" Text="Registrar" CssClass="btn btn-primary" OnClick="Button1_Click" />
                 &nbsp;
-                <asp:Button ID="Button2" runat="server" Text="Modificar" CssClass="btn btn-warning" />
+                <asp:Button ID="Button2" runat="server" Text="Modificar" CssClass="btn btn-warning" OnClick="Button2_Click" />
                 &nbsp;
-                <asp:Button ID="Button3" runat="server" Text="Eliminar"  CssClass="btn btn-danger" />
+                <asp:Button ID="Button3" runat="server" Text="Eliminar"  CssClass="btn btn-danger" OnClick="Button3_Click" />
                 <br />
             </td>
         </tr>

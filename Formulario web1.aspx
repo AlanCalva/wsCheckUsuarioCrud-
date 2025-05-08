@@ -4,11 +4,11 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-   <br />
+    <br />
     <asp:Label ID="Label1" runat="server" Text="Reporte de Usuarios Registrados" CssClass="tituloContenido"></asp:Label>
     <br /><br />
     <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-    <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/imagenes/icon_logalum.GIF" />
+    <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/imagenes/icon_logalum.GIF" OnClick="ImageButton1_Click" />
 
     <br /><br />
     <asp:GridView ID="GridView1" runat="server" AllowPaging="True" PageSize="5">
